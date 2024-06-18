@@ -330,11 +330,11 @@
     var presenter = null;
 
     const queryString = window.location.search;
-    console.log(queryString);
     const urlParams = new URLSearchParams(queryString);
     let model_id = urlParams.get("model");
     console.log(model_id);
     let url_model = "models/" + model_id + "/" + model_id + ".nxs";
+    consloe.log(url_model);
 
     function setup3dhop() {
       presenter = new Presenter("draw-canvas");
